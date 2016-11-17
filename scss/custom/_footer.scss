@@ -1,0 +1,10 @@
+.footer{
+	&-logo{
+  	float: left;
+	}
+	&-copyright{
+		float: right;
+		color: #fff;
+		opacity: 0.3;
+	}
+}

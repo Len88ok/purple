@@ -1,0 +1,72 @@
+/* меню */
+.nav {
+	margin: 20px 0;
+	float: right;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	*display:inline; /* ie7 */
+}
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	line-height: 100%;
+}
+.nav .current a {
+	color: $brand-primary;
+
+}
+
+@media screen and (max-width: $screen-sm ) {
+	.nav {
+		position: relative;
+		float: none;
+		min-height: 40px;
+	}	
+	.nav ul {
+		width: 138px;
+		padding: 5px 0;
+		position: absolute;
+		left: 3%;
+		top: 0;
+		border: solid 1px #aaa;
+		background: transparent url('../images/icon-menu.png') no-repeat 8px 9px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+	.nav li {
+		display: none; /* скрыть все <li> пункты */
+		margin: 0;
+	}
+	.nav .current {
+		display: block; /* показывать только текущие активные <li> пункты */
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+	}
+	.nav .current a {
+		background: none;
+		color: inherit;
+	}
+ 
+	/* при наведении на пункты меню */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav ul:hover .current {
+		background: url('../images/icon-check.png') no-repeat 10px 4px;
+	} 
+}

@@ -1,0 +1,89 @@
+// Variables
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #330a4e;
+$gray-dark:              #12121a;
+$gray:                   #1b1b1b;
+$gray-light:             #d2cad7;
+$gray-lighter:           #9b9b9b;
+
+
+$brand-primary:         #ff1791;
+$brand-secondary:       #2b1940;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               $gray-dark;
+//** Global text color on `<body>`.
+$text-color:            #fff;
+
+//** Global textual link color.
+$link-color:            #fff;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      $brand-primary;
+//** Link hover decoration.
+$link-hover-decoration: none;
+
+$container-large-desktop:      1002px;
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  'Open Sans', Arial, sans-serif;
+$font-family-sans-serif-2:  'Roboto', Arial, sans-serif;
+
+$font-family-base:        $font-family-sans-serif;
+
+$font-size-h1:            39px; 
+$font-size-h2:            30px; 
+$font-size-h3:            25px; 
+$font-size-h4:            20px; 
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+
+$navbar-height:                    73px;
+$navbar-margin-bottom:             20%;
+$navbar-border-radius:             0;
+
+
+$navbar-default-color:             #fff;
+$navbar-default-bg:                transparent;
+$navbar-default-border:            none;
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+$input-bg:                       #fff;
+
+//** Text color for `<input>`s
+$input-color:                    $gray;
+//** `<input>` border color
+$input-border:                   #2b1949;
+
+// TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
+//** Default `.form-control` border radius
+// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+$input-border-radius:            17px;
+
+//** Border color for inputs on focus
+$input-border-focus:             lighten($input-border, 20%);
+
+//** Placeholder text color
+$input-color-placeholder:        #999 !default;
+
+//** Default `.form-control` height
+$input-height-base:              40px;
+
+

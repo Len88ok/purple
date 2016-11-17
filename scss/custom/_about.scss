@@ -1,0 +1,31 @@
+.about{
+	
+	padding: 50px 20px;
+	&-heading{
+		position: absolute;
+		top: 10%;
+		left: 45%;
+		color: $brand-primary;
+		text-transform: uppercase;
+		background: #32316c;
+		z-index: 100;
+		width: 100px;
+		height: 20px;
+		>h3{
+			margin: 0;
+		}
+	}
+	&-desc{
+		position: relative;
+		padding: 60px;
+		font-family: $font-family-sans-serif;
+    font-size: 25px;
+    border: 1px solid #fff;
+    p{
+    	color: rgba(255, 255, 255, .75);
+    }    
+    p > b{ 
+    	color: rgba(255, 255, 255, 1);
+    } 
+	}
+}

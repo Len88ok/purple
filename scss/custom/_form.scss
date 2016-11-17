@@ -1,0 +1,17 @@
+.contact-form{
+  padding: 24px;
+  background: $gray-light;    
+  text-align: center;
+  >h4{
+  	color: $brand-primary;
+  	text-transform: uppercase;
+  }
+  >p{
+  	color: $brand-secondary;
+  }
+  .btn{
+  	@include button-size(14px, 80px, 14px, 1.1, 0);
+  	text-transform: uppercase;
+  	box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+  }
+ }

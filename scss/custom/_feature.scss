@@ -1,0 +1,39 @@
+.feature{
+	&-set{
+		position: relative;
+		width: 310px;
+		height: 310px;
+		border: 50%;
+		&-1{
+     background: url('../images/round-image1.png') no-repeat 0 0;		}
+		&-2{
+			background: url('../images/round-image2.png') no-repeat 0 0;
+		}
+		&-3{
+			background: url('../images/round-image3.png') no-repeat 0 0;
+		}
+	}
+	&-icon{
+		position: absolute;
+		display: inline-block;
+		width: 103px;
+		height: 103px;
+		background: $brand-primary url('../images/feature-icon1.svg') no-repeat 20px 22px;
+		border-radius: 50%;
+		text-align: center;
+	}	
+	&-content{
+		position: absolute;
+		top: 75%;
+		text-align: center;
+		background-color: $gray;
+	}
+	&-heading{
+		>h3{
+			margin: 0;
+		}		
+		text-align: center;
+		text-transform: uppercase;		
+    display: inline-block;
+	}
+}
