@@ -25,6 +25,11 @@
 }
 
 @media screen and (max-width: $screen-sm ) {
+	.navbar-default .navbar-brand{
+		>img{			
+			width: 75vw;
+		}
+	}
 	.nav {
 		position: relative;
 		float: none;
@@ -69,4 +74,21 @@
 	.nav ul:hover .current {
 		background: url('../images/icon-check.png') no-repeat 10px 4px;
 	} 
+}
+
+@media screen and (min-width: $screen-xs-min ) {
+	.navbar-default .navbar-brand{
+		padding: 0;
+		>img{			
+			width: 75vw;
+		}
+	}
+}
+
+	@media screen and (min-width: $screen-sm-min ) {
+	.navbar-default .navbar-brand{
+		>img{			
+			width: 100%;
+		}
+	}
 }

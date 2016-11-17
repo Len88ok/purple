@@ -1,13 +1,37 @@
 .footer{
 	&-logo{
-  	float: left;
-	}
+		>img{
+  		margin-bottom: 10px;
+		}
+  }
 	&-copyright{
-		float: right;
 		color: #fff;
 		opacity: 0.3;
 		&:hover{
 			opacity: 1;
+		}
+	}
+}
+
+@media screen and (min-width: $screen-xs-min ) {
+	.footer{
+		&-logo{
+  		float: none;
+  		margin-bottom: 10px;
+  	}
+  	&-copyright{
+			float: none;
+		}
+	}
+}
+
+@media screen and (min-width: $screen-sm-min ) {
+	.footer{
+		&-logo{
+  		float: left;
+  	}
+  	&-copyright{
+			float: right;
 		}
 	}
 }

@@ -3217,6 +3217,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-default .navbar-brand > img {
+    width: 75vw;
+  }
   .nav {
     position: relative;
     float: none;
@@ -3264,6 +3267,21 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .navbar-default .navbar-brand {
+    padding: 0;
+  }
+  .navbar-default .navbar-brand > img {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-default .navbar-brand > img {
+    width: 100%;
+  }
+}
+
 .thumbnail {
   display: block;
   padding: 4px;
@@ -3285,7 +3303,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 
 .thumbnail .caption {
-  padding: 3em 5em;
+  padding: 4vw 6vw;
   color: #fff;
 }
 
@@ -3346,13 +3364,16 @@ a.thumbnail.active {
 .about-heading {
   position: absolute;
   top: 29px;
-  left: 43%;
-  color: #ff1791;
+  margin: auto;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background: #ff1791;
   text-transform: uppercase;
-  background: #32316c;
   z-index: 100;
   width: 150px;
-  height: 20px;
+  height: 30px;
+  border: 2px;
 }
 
 .about-heading > h3 {
@@ -3382,12 +3403,12 @@ a.thumbnail.active {
   padding: 0;
   border: 0;
   width: 100%;
-  height: 260px;
+  height: 30vw;
 }
 
 .gallery .thumbnail > img {
   width: 100%;
-  height: 260px;
+  height: 30vw;
 }
 
 .gallery .thumbnail > img:hover {
@@ -3410,6 +3431,24 @@ a.thumbnail.active {
 .gallery .caption > h2 > span {
   color: #ff1791;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 480px) {
+  .gallery .thumbnail {
+    height: 25vw;
+  }
+  .gallery .thumbnail > img {
+    height: 25vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gallery .thumbnail {
+    height: 20vw;
+  }
+  .gallery .thumbnail > img {
+    height: 20vw;
+  }
 }
 
 .contact-form {
@@ -3436,16 +3475,34 @@ a.thumbnail.active {
   box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
-.footer-logo {
-  float: left;
+.footer-logo > img {
+  margin-bottom: 10px;
 }
 
 .footer-copyright {
-  float: right;
   color: #fff;
   opacity: 0.3;
 }
 
 .footer-copyright:hover {
   opacity: 1;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-logo {
+    float: none;
+    margin-bottom: 10px;
+  }
+  .footer-copyright {
+    float: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    float: left;
+  }
+  .footer-copyright {
+    float: right;
+  }
 }

@@ -2,13 +2,16 @@
 	&-heading{
 		position: absolute;
 		top: 29px;
-		left: 43%;
-		color: $brand-primary;
+    margin: auto;
+    left: 0;
+    right: 0;
+		color: #fff;
+		background: $brand-primary;
 		text-transform: uppercase;
-		background: #32316c;
 		z-index: 100;
 		width: 150px;
-		height: 20px;
+		height: 30px;
+		border: 2px;
 		>h3{
 			margin: 0;
 		}
@@ -27,3 +30,5 @@
     } 
 	}
 }
+
+
