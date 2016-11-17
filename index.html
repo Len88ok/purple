@@ -32,14 +32,15 @@
 								<nav class="nav">
 									<ul>
 								    <li class="current"><a class="text-uppercase" href="#">Главная</a></li>
-								    <li><a class="text-uppercase" href="#">О Нас</a></li>
-								    <li><a class="text-uppercase" href="#">Галерея</a></li>
-								    <li><a class="text-uppercase" href="#">Контакты</a></li>
+								    <li><a class="text-uppercase" href="#about-block">О Нас</a></li>
+								    <li><a class="text-uppercase" href="#gallery-block">Галерея</a></li>
+								    <li><a class="text-uppercase" href="#contact-block">Контакты</a></li>
 									</ul>
 								</nav>
 							</div>
 						</div>
 					</div>
+					<!-- Begin features block -->
 					<div class="feature">
 	  				<div class="row">
 					    <div class="col-md-4">
@@ -77,12 +78,13 @@
 					    </div>				    
 					  </div>
 					</div>
+					<!-- end features block -->
 				</div>
 			</div>
 		</div>
 	</div><!-- end header -->
-	<!-- Begin features block -->
-	<div class="block block-overlay2 text-center" style="background-image: url('images/bg2.png')">
+	<!-- Begin About block -->
+	<div class="block block-overlay2 text-center" id="about-block" style="background-image: url('images/bg2.png')">
 		<div class="block-content">
 			<div class="block-inner">
 				<div class="container">
@@ -99,8 +101,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="block block-overlay" style="background-image: url('images/bg3.png')">
+	</div><!--end About block--> 
+	<!--Begin Gallery block-->
+	<div class="block block-overlay" id="gallery-block" style="background-image: url('images/bg3.png')">
 		<div class="block-content">
 			<div class="block-inner">
 				<div class="container">
@@ -146,8 +149,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="block block-overlay" style="background-image: url('images/bg4.png')">
+	</div><!--end gallery block-->
+	<!--Begin Contact block-->
+	<div class="block block-overlay" id="contact-block" style="background-image: url('images/bg4.png')">
 		<div class="block-content">
 			<div class="block-inner">
 				<div class="container">				
@@ -160,12 +164,15 @@
 	  			 	 	<form>
 							  <div class="form-group">
 							    <input type="text" class="form-control" id="form-name" placeholder="Ваше имя*">
+							    <span class="form-icon"><a href="#"><img src="images/icon-man.png"></a></span>
 							  </div>
 							  <div class="form-group">
 							    <input type="text" class="form-control" id="form-phone" placeholder="Ваше телефон*">
+							    <span class="form-icon"><a href="#"><img src="images/icon-phone.png"></a></span>
 							  </div>
 							  <div class="form-group">
-							    <input type="text" class="form-control" id="form-city" placeholder="Ваше город*">			    
+							    <input type="text" class="form-control" id="form-city" placeholder="Ваше город*">
+							    <span class="form-icon"><a href="#"><img src="images/icon-home.png"></a></span>			    
 							  </div>							  
 							  <button type="button" class="btn btn-primary" aria-label="Center">Отправить</button>
 							</form>
@@ -175,7 +182,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><!--end Contact block-->
+	<!--Begin Footer block-->
 	<footer class="block block-pad-lg">
 		<div class="block-footer">
 			<div class="block-inner">
@@ -192,7 +200,7 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer> <!--end footer-->
   <!-- scripts -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>

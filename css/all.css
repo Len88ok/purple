@@ -3475,6 +3475,20 @@ a.thumbnail.active {
   box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
+.contact-form .form-control {
+  padding: 6px 40px;
+}
+
+.contact-form .form-group {
+  position: relative;
+}
+
+.contact-form .form-icon {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
 .footer-logo > img {
   margin-bottom: 10px;
 }
