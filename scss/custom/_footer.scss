@@ -6,5 +6,8 @@
 		float: right;
 		color: #fff;
 		opacity: 0.3;
+		&:hover{
+			opacity: 1;
+		}
 	}
 }

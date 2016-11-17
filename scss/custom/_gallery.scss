@@ -1,17 +1,35 @@
 .gallery{
 	.thumbnail{
+		background-color: #2b1940;
 		margin-bottom: 4px;
 		border: none;
 		padding: 0;
 		border: 0;
+		width: 100%;
+		height: 260px;
 		>img{
 			width: 100%;
 			height: 260px;
+			&:hover{
+				opacity: 0.75;
+			}	
+
 		}
 	}
 	[class*="col-"]{
 		padding-left: 2px;
 		padding-right: 2px;
 	}
+	.caption{
+		text-align: center;
+		>h2{
+			font-size: 2.5vw;
+		}
+		>h2>span{			
+			color: $brand-primary;
+			text-transform: uppercase;
+		}		
+	}	
 }
+
 

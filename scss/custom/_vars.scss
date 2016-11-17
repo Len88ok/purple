@@ -52,7 +52,7 @@ $headings-color:          inherit !default;
 
 
 $navbar-height:                    73px;
-$navbar-margin-bottom:             20%;
+$navbar-margin-bottom:             10%;
 $navbar-border-radius:             0;
 
 
@@ -86,4 +86,6 @@ $input-color-placeholder:        #999 !default;
 //** Default `.form-control` height
 $input-height-base:              40px;
 
+//Thumbnail
+$thumbnail-caption-padding:   3em 5em;
 
