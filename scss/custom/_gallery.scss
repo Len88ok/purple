@@ -1,4 +1,30 @@
+#myCarousel{
+	margin-bottom: 50px;
+	.carousel{
+		&-control{
+			background-color: $brand-primary;
+			&.left{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-image: none;
+				left: -8%;
+		    top: 45%;
+			}
+			&.right{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-image: none;
+				right: -8%;
+		    top: 45%;
+			}
+		}
+	}
+}
+
 .gallery{
+	padding: 0 15px;
 	.thumbnail{
 		background-color: #2b1940;
 		margin-bottom: 4px;
@@ -41,9 +67,23 @@
 			}
 		}
 	}
+	#myCarousel{
+		.carousel{
+			&-control{			
+				&.left{
+				top: 105%;	
+				left: 40%;			
+				}
+				&.right{
+				top: 105%;	
+				right: 40%;				
+				}
+			}
+		}
+	}
 }
 
-@media screen and (min-width: $screen-md-min ) {
+@media screen and (min-width: $screen-sm-min ) {
 	.gallery{
 		.thumbnail{		
 			height: 23vw;
@@ -53,6 +93,44 @@
 		}
 	}
 }
+
+@media screen and (min-width: $screen-md-min ) {
+	.gallery{
+		.thumbnail{		
+			height: 22vw;
+			>img{
+				height: 22vw;			
+			}
+		}
+	}
+	
+}
+
+@media screen and (min-width: $screen-lg-min ) {
+	.gallery{
+		.thumbnail{		
+			height: 20vw;
+			>img{
+				height: 20vw;			
+			}
+		}
+	}
+	#myCarousel{
+		.carousel{
+			&-control{			
+				&.left{
+				top: 45%;	
+				left: -8%;			
+				}
+				&.right{
+				top: 45%;	
+				right: -8%;				
+				}
+			}
+		}
+	}
+}
+
 
 
 

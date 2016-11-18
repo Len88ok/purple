@@ -87,5 +87,13 @@ $input-color-placeholder:        #999 !default;
 $input-height-base:              40px;
 
 //Thumbnail
-$thumbnail-caption-padding:   4vw 6vw;
+$thumbnail-caption-padding:   3vw;
+
+
+//Carousel
+$carousel-control-color:                      $brand-primary;
+$carousel-control-width:                      20px;
+$carousel-control-opacity:                    1;
+$carousel-control-font-size:                  0;
+
 
