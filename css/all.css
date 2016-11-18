@@ -3367,7 +3367,7 @@ a.thumbnail.active {
   margin: auto;
   left: 0;
   right: 0;
-  color: #fff;
+  color: #ff1791;
   text-transform: uppercase;
   z-index: 100;
   width: 150px;
@@ -3495,6 +3495,14 @@ a.thumbnail.active {
   .gallery .thumbnail > img {
     height: 22vw;
   }
+  #myCarousel .carousel-control.left {
+    top: 45%;
+    left: -6%;
+  }
+  #myCarousel .carousel-control.right {
+    top: 45%;
+    right: -6%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -3503,14 +3511,6 @@ a.thumbnail.active {
   }
   .gallery .thumbnail > img {
     height: 20vw;
-  }
-  #myCarousel .carousel-control.left {
-    top: 45%;
-    left: -8%;
-  }
-  #myCarousel .carousel-control.right {
-    top: 45%;
-    right: -8%;
   }
 }
 
